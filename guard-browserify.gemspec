@@ -1,6 +1,5 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'guard/browserify/version'
 
 Gem::Specification.new do |spec|
@@ -14,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
-  spec.require_paths = ["lib"]
+  spec.require_path  = "lib"
 
   spec.add_dependency "guard"
 
