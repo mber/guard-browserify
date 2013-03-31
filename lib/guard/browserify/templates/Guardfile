@@ -1,0 +1,3 @@
+guard :browserify do
+  watch(/.*\.js/)
+end
